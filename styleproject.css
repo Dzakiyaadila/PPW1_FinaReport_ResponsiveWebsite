@@ -1,0 +1,1181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0C5C40;
+    padding: 20px 50px;
+    color: white;
+    height: 80px;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+.logo {
+    font-size: 45px;
+    font-family: "Jomhuria", serif;
+    color: white;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-left: auto;
+    width: auto;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin-right: 40px;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    transition: 0.3s;
+}
+.nav-links li a:hover {
+    color: #c4e3cb;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.search-bar input {
+    padding: 8px 12px;
+    border-radius: 5px;
+    border: none;
+}
+.search-bar button {
+    padding: 8px 12px;
+    background-color: #2e7e5b;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin-left: auto;
+    color: white;
+}
+.menu-toggle {
+    display: none;
+}
+.section1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 10%;
+    background-color: #f8f9fa;
+    gap: 40px;
+}
+
+.section1 .text {
+    flex: 1;
+}
+
+.section1 h1 {
+    font-size: 32px;
+    color: #0C5C40;
+    margin-bottom: 20px;
+    font-family: "poppins", sans-serif;
+}
+
+.section1 p {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    font-family: "poppins", sans-serif;
+}
+
+.join-button {
+    background-color: #0C5C40;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.join-button:hover {
+    background-color: #094c34;
+}
+
+.image-placeholder {
+    flex: 1;
+}
+
+.image-placeholder img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.why-join {
+    text-align: center;
+    padding: 60px 40px;
+    background-color: #e2f1e2;
+
+}
+
+.why-join h2 {
+    font-size: 38px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: -40px;
+    color: black;
+    text-align: center;
+    font-family: "Playfair";
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    border-top: 5px;
+}
+
+.why-join p {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin: auto;
+}
+
+
+.kotak {
+    background-color: #B7D3C6;
+    padding: 20px;
+    border-radius: 10px;
+    flex: 1;
+    max-width: 250px;
+    
+}
+
+.kotak h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+    font-family: "playfair";
+}
+
+.kotak p {
+    font-size: 16px;
+    font-weight: 700px;
+    color: black;
+    font-family: "playfair";
+    max-width: 480px;
+}
+
+.rakBuku-placeholder{
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("find.jpg");
+    width: 100%;
+    height: 190px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.rakBuku-placeholder h2{
+    background-repeat: no-repeat;
+    font-size: 24px;
+    font-family: "poppins";
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    max-width: 80%;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: #015B45;
+    padding: 20px;
+    gap: 100px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+
+}
+.navbar::-webkit-scrollbar {
+    display: none;
+}
+.navbar a{
+    flex: 0 0 auto;
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    padding: 0;
+    margin-right: 60px;
+
+}
+
+.nav-tab:hover {
+    color: #006cdf;
+}
+
+
+
+.selling-book{
+    background-color: #f3fffa;
+}
+.carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding: 20px;
+    overflow-x: auto;
+    scroll-snap-type: mandatory;
+}
+
+.book {
+    background-color: #f3fffa;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    gap: 40px;
+    margin: auto;
+}
+.book:hover {
+    transform: scale(1.05);
+}
+.book img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.price {
+    font-weight: bold;
+}
+/* === TUTUP === */
+
+.disc-com{
+    background-color: #f3fffa;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.com {
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    background-color: #f3fffa;
+}
+article{
+    flex: 1;
+    padding: 20px;
+    min-width: 250px;
+}
+article h2{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+article ul{
+    list-style: none;
+    padding: 0;
+}
+article ul li {
+    font-size: 16px;
+    padding: 8px 0;
+    display: flex;
+    align-items: center;
+}
+article ul li strong{
+    margin-left: 5px;
+}
+.testimoni {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    background-color: #e2f1e2;
+    flex-wrap: wrap;
+}
+
+.content {
+    max-width: 600px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.content h2 {
+    font-size: 45px;
+    font-weight: bold;
+    color: #000;
+    margin-left: 150px;
+}
+
+.rating {
+    font-size: 35px;
+    margin-left: 150px;
+    margin-top: 40px;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 100%;
+}
+
+.review-box {
+    background-color: #3b946b;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 15px;
+    max-width: 350px;
+    font-size: 16px;
+}
+
+.transparent {
+    background-color: rgba(59, 148, 107, 0.5);
+}
+
+
+.book-com{
+    background-image: url("club2.png");
+    display: block;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60vh
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background: #f8f9fa;
+    flex-wrap: wrap;
+}
+
+.footer-info {
+    max-width: 400px;
+    margin-left: 70px;
+    text-align: center;
+}
+
+.footer-info .logo {
+    font-size: 42px;
+    font-weight: bold;
+    color:  #0C5C40;
+    font-family: "jomhuria";
+
+}
+
+.footer-info p {
+    font-size: 18px;
+    margin: 5px 0;
+    max-width: 250px;
+}
+
+.footer-info .social-icons {
+    margin: 10px 0;
+}
+
+.footer-info .social-icons a {
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
+    margin: 8px;
+}
+
+i {
+    font-size: 24px;
+    color: #333;
+    padding: 8px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+i:hover {
+    background: #678485;
+}
+
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+    margin-right: 100px;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-column h3 {
+    margin-bottom: 10px;
+    color: #0C5C40;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.footer-column a {
+    font-size: 14px;
+    text-decoration: none;
+    color: black;
+    margin-bottom: 5px;
+}
+
+@media (max-width:614px){
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .logo{
+        margin: 0 auto;
+        display: block;
+    }
+    nav ul {
+        display: inline-block;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+    }
+    nav ul li {
+        display: inline-block;
+        margin: 0;
+    }
+    nav ul li a {
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+    }
+    nav ul li a:hover {
+        background-color: #0C5C40;
+        color: white;
+    }
+    .search-bar {
+        margin: auto;
+        display: 280px;
+    }
+}
+
+
+
+
+
+
+@media (max-width: 1024px) {
+    header {
+        padding: 20px 30px;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    .logo {
+        margin-bottom: 15px;
+    }
+    
+    nav ul {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .section1 {
+        flex-direction: column;
+        padding: 50px 5%;
+        text-align: center;
+    }
+    
+    .text {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .text h1, .text p {
+        max-width: 100%;
+    }
+    
+    .container {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    .kotak {
+        max-width: 100%;
+        min-width: 200px;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        flex-direction: row;
+    }
+    .com {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .testimoni {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .content h2 {
+        margin-left: 0;
+    }
+    
+    .rating {
+        margin-left: 0;
+    }
+    
+    .reviews {
+        align-items: center;
+    }
+    .book-com{
+        display: none;
+    }
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-info {
+        margin-left: 0;
+    }
+    
+    .footer-links {
+        justify-content: center;
+        margin-right: 0;
+        gap: 30px;
+    }
+}
+
+
+@media (max-width: 834px){
+    .search-bar{
+        margin-left: auto;
+        margin-top: -20px;
+    }
+    
+}
+@media (max-width: 590px){
+    nav ul{
+        margin-right: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    header{
+        text-align: center;
+    }
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+    .search-bar input{
+        order: 2;
+        width: auto;
+        min-width: 200px;
+        margin-left: auto;
+    }
+
+    .search-bar {
+        margin-top: 15px;
+        justify-content: right;
+
+    }
+    
+    .search-bar input {
+        width: 80%;
+    }
+    
+    .section1 {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    
+    .text h1 {
+        font-size: 32px;
+    }
+    
+    .text p {
+        font-size: 18px;
+    }
+    
+    .join-button {
+        font-size: 28px;
+        padding: 12px 16px;
+    }
+    
+    .why-join h2 {
+        font-size: 30px;
+    }
+    
+    .rakBuku-placeholder h2 {
+        font-size: 20px;
+    }
+    
+    .navbar {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        gap: 10px;
+        padding: 10px;
+        scroll-behavior: smooth
+    }
+    .nav-tab{
+        flex: 0 0 auto;
+        padding: 10px 16px;
+        white-space: nowrap;
+    }
+    .selling {
+        gap: 20px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .carousel {
+        justify-content: flex-start;
+        padding: 10px;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    
+    .book {
+        min-width: 140px;
+    }
+    
+    .book img {
+        width: 120px;
+        height: 180px;
+    }
+    
+    .content h2 {
+        font-size: 32px;
+    }
+    
+    .testimoni {
+        padding: 30px 20px;
+    }
+    .book-com{
+        display: none;
+    }
+    .footer {
+        padding: 30px 20px;
+    }
+    
+    .footer-column {
+        min-width: 120px;
+    }
+}
+
+@media (max-width: 575px) {
+    .logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav ul {
+        
+        justify-content: center;
+        gap: 10px;
+        flex-direction: row;
+    }
+    .text h1 {
+        font-size: 28px;
+    }
+    
+    .text p {
+        font-size: 16px;
+    }
+    
+    .why-join h2 {
+        font-size: 26px;
+        margin-top: 0;
+    }
+    
+    .why-join p {
+        font-size: 16px;
+    }
+    
+    .container {
+        gap: 20px;
+    }
+    
+    .kotak {
+        padding: 15px;
+    }
+    
+    .kotak h3 {
+        font-size: 18px;
+    }
+    
+    .kotak p {
+        font-size: 14px;
+    }
+    
+    article h2 {
+        font-size: 20px;
+    }
+    
+    article ul li {
+        font-size: 14px;
+    }
+    
+    .content h2 {
+        font-size: 26px;
+    }
+    
+    .rating {
+        font-size: 28px;
+    }
+    
+    .review-box {
+        font-size: 14px;
+        padding: 12px 15px;
+    }
+    .book-com{
+        display: none;
+    }
+    .footer-info .logo {
+        font-size: 36px;
+    }
+    
+    .footer-info p {
+        font-size: 14px;
+    }
+    
+    .footer-column h3 {
+        font-size: 16px;
+    }
+    
+    .footer-column a {
+        font-size: 13px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header {
+        padding: 15px 20px;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+        margin: 10px 0 0 0;
+        background-color: #0C5C40;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 12px 0;
+        border-top: 1px solid #ffffff33;
+    }
+
+    .menu-toggle:checked ~ nav .nav-links {
+        display: flex;
+    }
+
+    .search-bar {
+        width: 100%;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .search-bar input,
+    .search-bar button {
+        width: 100%;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        padding: 15px 30px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 36px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .nav-links li a {
+        font-size: 13px;
+    }
+
+    .search-bar {
+        width: 100%;
+        justify-content: center;
+        margin-top: 10px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .search-bar input {
+        width: 60%;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+
+    .hamburger,
+    .menu-toggle {
+        display: none;
+    }
+}
+@media (max-width: 480px) {
+    .selling-book {
+        padding: 20px 10px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .nav-tab {
+        background-color: #d8f3ea;
+        padding: 8px 12px;
+        border-radius: 5px;
+        font-size: 14px;
+        font-weight: 500;
+        font-family: "Poppins", sans-serif;
+        color: #0C5C40;
+        width: 100%;
+    }
+
+    .carousel {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 15px 10px;
+        gap: 16px;
+    }
+
+    .book {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        width: 140px;
+        padding: 10px;
+    }
+
+    .book img {
+        width: 120px;
+        height: 180px;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 15px 40px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+
+    .logo {
+        font-size: 38px;
+    }
+
+    .nav-links {
+        gap: 18px;
+        margin-right: 0;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .nav-links li a {
+        font-size: 14px;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        gap: 10px;
+    }
+
+    .search-bar input {
+        padding: 7px 10px;
+        font-size: 14px;
+    }
+
+    .search-bar button {
+        padding: 7px 14px;
+        font-size: 14px;
+    }
+
+    .hamburger,
+    .menu-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .section1 {
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+    }
+
+    .section1 h1 {
+        font-size: 24px;
+    }
+
+    .section1 p {
+        font-size: 14px;
+    }
+
+    .join-button {
+        font-size: 13px;
+        padding: 10px 16px;
+    }
+
+    .image-placeholder {
+        margin-top: 30px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .section1 {
+        flex-direction: column;
+        padding: 60px 40px;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .section1 h1 {
+        font-size: 28px;
+    }
+
+    .section1 p {
+        font-size: 15px;
+    }
+
+    .join-button {
+        font-size: 14px;
+        padding: 11px 18px;
+    }
+
+    .image-placeholder {
+        margin-top: 20px;
+    }
+
+    .image-placeholder img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .section1 {
+        flex-direction: row;
+        padding: 80px 60px;
+        gap: 50px;
+    }
+
+    .section1 .text {
+        flex: 1;
+    }
+
+    .section1 h1 {
+        font-size: 32px;
+    }
+
+    .section1 p {
+        font-size: 16px;
+    }
+
+    .join-button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+    .image-placeholder {
+        flex: 1;
+    }
+
+    .image-placeholder img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .selling-book {
+        padding: 30px 20px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .nav-tab {
+        background-color: #d8f3ea;
+        padding: 10px 16px;
+        border-radius: 5px;
+        font-size: 15px;
+        font-family: "Poppins", sans-serif;
+        color: #0C5C40;
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .book {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        width: 160px;
+        padding: 12px;
+    }
+
+    .book img {
+        width: 140px;
+        height: 200px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .selling-book {
+        padding: 40px 30px;
+    }
+
+    .navbar {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+        justify-content: center;
+        padding: 15px;
+    }
+
+    .nav-tab {
+        background-color: #d8f3ea;
+        padding: 12px 20px;
+        border-radius: 6px;
+        font-size: 16px;
+        font-family: "Poppins", sans-serif;
+        color: #0C5C40;
+        transition: background 0.3s ease;
+    }
+
+    .nav-tab:hover {
+        background-color: #b2e2cf;
+    }
+
+    .carousel {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        padding: 25px;
+        gap: 25px;
+    }
+
+    .book {
+        flex: 0 0 auto;
+        scroll-snap-align: start;
+        width: 180px;
+        padding: 15px;
+    }
+
+    .book img {
+        width: 160px;
+        height: 220px;
+    }
+
+    .price {
+        font-size: 16px;
+    }
+}
